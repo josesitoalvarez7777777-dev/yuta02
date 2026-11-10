@@ -1,0 +1,444 @@
+/* Portada (index.html) */
+.home-body {
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('../imagenes/fondo2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.home-header h1 {
+    font-size: 3.5rem;
+    font-style: italic;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.slogan {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+    font-style: italic;
+}
+
+/* Enlaces del menú en la portada */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    padding: 5px 10px;
+}
+
+.main-nav a:hover, .main-nav a.active {
+    color: #a8dadc;
+    border-bottom: 2px solid #a8dadc;
+}
+
+/* Iconos de redes sociales en la portada */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #a8dadc;
+    transform: scale(1.2);
+
+}
+
+/* Estilos del Blog */
+.blog-article {
+    text-align: center; /* Centra todo el contenido del blog */
+}
+
+.blog-image-container {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    margin-bottom: 25px;
+}
+
+.main-blog-img {
+    max-width: 600px; /* Limita el ancho para que no se vea gigante */
+    width: 100%;      /* Hace que sea adaptable/responsiva */
+    height: auto;     /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes suavemente redondeados */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Sombra elegante */
+}
+
+/* Sección de Autor Centrada */
+.author-box {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra la foto y texto del autor */
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.author-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Foto redonda */
+    object-fit: cover;
+}
+
+/* 1. Eliminamos espacios en blanco del navegador */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* 2. Configuración de la imagen de fondo continua */
+body.blog-body {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../imagenes/fondo3.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* 3. Ajuste de la tarjeta flotante */
+.content-container {
+    max-width: 800px;
+    margin: 90px auto 40px auto; /* 90px deja justo el espacio para la barra negra superior */
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Reset básico */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5; /* O tu imagen de fondo habitual */
+}
+
+/* Limpiar márgenes por defecto de la etiqueta figure */
+figure {
+  margin: 0;
+}
+
+/* Barra de Navegación Horizontal y Centrada */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px 0;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.navbar a.active {
+  border-bottom: 2px solid #ff4d4d;
+  padding-bottom: 3px;
+}
+
+/* Contenedor principal de la tarjeta blanca */
+.container {
+  max-width: 950px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.titulo-seccion {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+/* Alineación de imágenes con Flexbox */
+.galeria-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Tarjeta individual de cada foto */
+.galeria-item {
+  background: #fdfdfd;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+}
+
+/* Ajuste de las imágenes para que no se deformen */
+.galeria-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Efecto hover pedido en la rúbrica (zoom y brillo) */
+.galeria-item img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Texto de la leyenda debajo de cada foto */
+.galeria-item figcaption {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #444444;
+  font-weight: bold;
+}
+
+/* Pie de página y Redes Sociales */
+.redes-sociales {
+  text-align: center;
+  margin: 30px 0;
+  color: #333;
+}
+
+.iconos-redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.iconos-redes a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.iconos-redes a:hover {
+  background-color: #ff4d4d;
+}
+
+/* Reset básico */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  /* Si deseas agregar una imagen de fondo general, descomenta la siguiente línea: */
+  /* background: url('imagenes/tu-fondo.jpg') no-repeat center center fixed; background-size: cover; */
+}
+
+/* Limpiar márgenes por defecto de la etiqueta figure */
+figure {
+  margin: 0;
+}
+
+/* Barra de Navegación Horizontal y Centrada */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px 0;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.navbar a.active {
+  border-bottom: 2px solid #ff4d4d;
+  padding-bottom: 3px;
+}
+
+/* Contenedor principal de la tarjeta blanca central */
+.container {
+  max-width: 950px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.titulo-seccion {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+/* ==========================================
+   ESTILOS PARA LA GALERÍA (Flexbox)
+   ========================================== */
+.galeria-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.galeria-item {
+  background: #fdfdfd;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+}
+
+.galeria-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.galeria-item img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.galeria-item figcaption {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #444444;
+  font-weight: bold;
+}
+
+/* ==========================================
+   ESTILOS PARA LA SECCIÓN DE VIDEOS
+   ========================================== */
+.video-card {
+  margin-bottom: 35px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.video-card h2 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+/* Contenedor responsivo para los iframes de YouTube (proporción 16:9) */
+.video-responsive {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-descripcion {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ==========================================
+   PIE DE PÁGINA Y REDES SOCIALES
+   ========================================== */
+.redes-sociales {
+  text-align: center;
+  margin: 30px 0;
+  color: #333;
+}
+
+.iconos-redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.iconos-redes a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.iconos-redes a:hover {
+  background-color: #ff4d4d;
+}
+
+/* Para la página de Galería */
+body.fondo-galeria {
+  background: url("imagenes/fondo3.jpg") no-repeat center center fixed !important;
+  background-size: cover !important;
+}
+
+/* Para la página de Videos */
+body.fondo-videos {
+  background: url('imagenes/fondo4.jpg') no-repeat center center fixed !important;
+  background-size: cover !important;
+}
+
